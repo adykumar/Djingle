@@ -1,0 +1,569 @@
+supervisor: couldn't exec /webapps/Djingle/hello_django/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/Djingle/hello_django/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/Djingle/hello_django/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/Djingle/hello_django/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+Starting hello_app as hello
+[2017-05-11 10:55:22 +0000] [15872] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f5a2eeb4cf8>
+  errorlog: -
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 2
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f5a2eeb4a28>
+  pre_fork: <function pre_fork at 0x7f5a2eeb4b90>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 999
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 9
+  proc_name: hello_app
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f5a2eeb48c0>
+  pre_exec: <function pre_exec at 0x7f5a2eebf320>
+  worker_tmp_dir: None
+  limit_request_fields: 100
+  pythonpath: None
+  on_exit: <function on_exit at 0x7f5a2eebfb18>
+  config: None
+  logconfig: None
+  check_config: False
+  statsd_prefix: 
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  reload_engine: auto
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f5a2eebf488>
+  post_request: <function post_request at 0x7f5a2eebf578>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f5a2eebf050>
+  raw_paste_global_conf: []
+  threads: 1
+  max_requests: 0
+  chdir: /webapps/hello_django/hello
+  daemon: False
+  user: 999
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  on_starting: <function on_starting at 0x7f5a2eeb4758>
+  post_worker_init: <function post_worker_init at 0x7f5a2eeb4e60>
+  child_exit: <function child_exit at 0x7f5a2eebf6e0>
+  worker_exit: <function worker_exit at 0x7f5a2eebf848>
+  paste: None
+  default_proc_name: hello.wsgi:application
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  ciphers: TLSv1
+  worker_abort: <function worker_abort at 0x7f5a2eebf1b8>
+  loglevel: debug
+  bind: ['unix:/webapps/hello_django/run/gunicorn.sock']
+  raw_env: []
+  initgroups: False
+  capture_output: False
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f5a2eebf9b0>
+  timeout: 30
+  keyfile: None
+  ca_certs: None
+  tmp_upload_dir: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2017-05-11 10:55:22 +0000] [15872] [INFO] Starting gunicorn 19.7.1
+[2017-05-11 10:55:22 +0000] [15872] [DEBUG] Arbiter booted
+[2017-05-11 10:55:22 +0000] [15872] [INFO] Listening at: unix:/webapps/hello_django/run/gunicorn.sock (15872)
+[2017-05-11 10:55:22 +0000] [15872] [INFO] Using worker: sync
+[2017-05-11 10:55:22 +0000] [15881] [INFO] Booting worker with pid: 15881
+[2017-05-11 10:55:22 +0000] [15884] [INFO] Booting worker with pid: 15884
+[2017-05-11 10:55:22 +0000] [15887] [INFO] Booting worker with pid: 15887
+[2017-05-11 10:55:22 +0000] [15890] [INFO] Booting worker with pid: 15890
+[2017-05-11 10:55:22 +0000] [15893] [INFO] Booting worker with pid: 15893
+[2017-05-11 10:55:22 +0000] [15894] [INFO] Booting worker with pid: 15894
+[2017-05-11 10:55:22 +0000] [15897] [INFO] Booting worker with pid: 15897
+[2017-05-11 10:55:22 +0000] [15902] [INFO] Booting worker with pid: 15902
+[2017-05-11 10:55:22 +0000] [15905] [INFO] Booting worker with pid: 15905
+[2017-05-11 10:55:23 +0000] [15872] [DEBUG] 9 workers
+[2017-05-11 10:55:34 +0000] [15872] [INFO] Handling signal: term
+[2017-05-11 17:55:34 +0000] [15884] [INFO] Worker exiting (pid: 15884)
+[2017-05-11 17:55:34 +0000] [15905] [INFO] Worker exiting (pid: 15905)
+[2017-05-11 17:55:34 +0000] [15881] [INFO] Worker exiting (pid: 15881)
+[2017-05-11 17:55:34 +0000] [15890] [INFO] Worker exiting (pid: 15890)
+[2017-05-11 17:55:34 +0000] [15902] [INFO] Worker exiting (pid: 15902)
+[2017-05-11 17:55:34 +0000] [15893] [INFO] Worker exiting (pid: 15893)
+[2017-05-11 17:55:34 +0000] [15887] [INFO] Worker exiting (pid: 15887)
+[2017-05-11 17:55:34 +0000] [15894] [INFO] Worker exiting (pid: 15894)
+[2017-05-11 17:55:34 +0000] [15897] [INFO] Worker exiting (pid: 15897)
+[2017-05-11 10:55:34 +0000] [15872] [INFO] Shutting down: Master
+Starting hello_app as hello
+[2017-05-11 10:55:34 +0000] [15911] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f0590c95cf8>
+  errorlog: -
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 2
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f0590c95a28>
+  pre_fork: <function pre_fork at 0x7f0590c95b90>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 999
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 9
+  proc_name: hello_app
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f0590c958c0>
+  pre_exec: <function pre_exec at 0x7f0590ca0320>
+  worker_tmp_dir: None
+  limit_request_fields: 100
+  pythonpath: None
+  on_exit: <function on_exit at 0x7f0590ca0b18>
+  config: None
+  logconfig: None
+  check_config: False
+  statsd_prefix: 
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  reload_engine: auto
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f0590ca0488>
+  post_request: <function post_request at 0x7f0590ca0578>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f0590ca0050>
+  raw_paste_global_conf: []
+  threads: 1
+  max_requests: 0
+  chdir: /webapps/hello_django/hello
+  daemon: False
+  user: 999
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  on_starting: <function on_starting at 0x7f0590c95758>
+  post_worker_init: <function post_worker_init at 0x7f0590c95e60>
+  child_exit: <function child_exit at 0x7f0590ca06e0>
+  worker_exit: <function worker_exit at 0x7f0590ca0848>
+  paste: None
+  default_proc_name: hello.wsgi:application
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  ciphers: TLSv1
+  worker_abort: <function worker_abort at 0x7f0590ca01b8>
+  loglevel: debug
+  bind: ['unix:/webapps/hello_django/run/gunicorn.sock']
+  raw_env: []
+  initgroups: False
+  capture_output: False
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f0590ca09b0>
+  timeout: 30
+  keyfile: None
+  ca_certs: None
+  tmp_upload_dir: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2017-05-11 10:55:34 +0000] [15911] [INFO] Starting gunicorn 19.7.1
+[2017-05-11 10:55:34 +0000] [15911] [DEBUG] Arbiter booted
+[2017-05-11 10:55:34 +0000] [15911] [INFO] Listening at: unix:/webapps/hello_django/run/gunicorn.sock (15911)
+[2017-05-11 10:55:34 +0000] [15911] [INFO] Using worker: sync
+[2017-05-11 10:55:34 +0000] [15920] [INFO] Booting worker with pid: 15920
+[2017-05-11 10:55:34 +0000] [15923] [INFO] Booting worker with pid: 15923
+[2017-05-11 10:55:34 +0000] [15924] [INFO] Booting worker with pid: 15924
+[2017-05-11 10:55:35 +0000] [15929] [INFO] Booting worker with pid: 15929
+[2017-05-11 10:55:35 +0000] [15932] [INFO] Booting worker with pid: 15932
+[2017-05-11 10:55:35 +0000] [15935] [INFO] Booting worker with pid: 15935
+[2017-05-11 10:55:35 +0000] [15936] [INFO] Booting worker with pid: 15936
+[2017-05-11 10:55:35 +0000] [15941] [INFO] Booting worker with pid: 15941
+[2017-05-11 10:55:35 +0000] [15944] [INFO] Booting worker with pid: 15944
+[2017-05-11 10:55:35 +0000] [15911] [DEBUG] 9 workers
+[2017-05-11 11:47:30 +0000] [15911] [INFO] Handling signal: term
+Traceback (most recent call last):
+  File "/webapps/hello_django/hello/../bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/hello_django/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/hello_django/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 203, in run
+    super(Application, self).run()
+  File "/webapps/hello_django/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/webapps/hello_django/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 227, in run
+    self.halt()
+  File "/webapps/hello_django/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 344, in halt
+    self.stop()
+  File "/webapps/hello_django/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 382, in stop
+    sock.close_sockets(self.LISTENERS, unlink)
+  File "/webapps/hello_django/local/lib/python2.7/site-packages/gunicorn/sock.py", line 208, in close_sockets
+    os.unlink(sock_name)
+OSError: [Errno 2] No such file or directory: '/webapps/hello_django/run/gunicorn.sock'
+Starting hello_app as hello
+[2017-05-11 11:54:16 +0000] [17652] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f3f4598fcf8>
+  errorlog: -
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 2
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f3f4598fa28>
+  pre_fork: <function pre_fork at 0x7f3f4598fb90>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 999
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 9
+  proc_name: hello_app
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f3f4598f8c0>
+  pre_exec: <function pre_exec at 0x7f3f4599c320>
+  worker_tmp_dir: None
+  limit_request_fields: 100
+  pythonpath: None
+  on_exit: <function on_exit at 0x7f3f4599cb18>
+  config: None
+  logconfig: None
+  check_config: False
+  statsd_prefix: 
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  reload_engine: auto
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f3f4599c488>
+  post_request: <function post_request at 0x7f3f4599c578>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f3f4599c050>
+  raw_paste_global_conf: []
+  threads: 1
+  max_requests: 0
+  chdir: /webapps/Djingle/hello_django/hello
+  daemon: False
+  user: 999
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  on_starting: <function on_starting at 0x7f3f4598f758>
+  post_worker_init: <function post_worker_init at 0x7f3f4598fe60>
+  child_exit: <function child_exit at 0x7f3f4599c6e0>
+  worker_exit: <function worker_exit at 0x7f3f4599c848>
+  paste: None
+  default_proc_name: hello.wsgi:application
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  ciphers: TLSv1
+  worker_abort: <function worker_abort at 0x7f3f4599c1b8>
+  loglevel: debug
+  bind: ['unix:/webapps/Djingle/hello_django/run/gunicorn.sock']
+  raw_env: []
+  initgroups: False
+  capture_output: False
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f3f4599c9b0>
+  timeout: 30
+  keyfile: None
+  ca_certs: None
+  tmp_upload_dir: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2017-05-11 11:54:16 +0000] [17652] [INFO] Starting gunicorn 19.7.1
+[2017-05-11 11:54:16 +0000] [17652] [DEBUG] Arbiter booted
+[2017-05-11 11:54:16 +0000] [17652] [INFO] Listening at: unix:/webapps/Djingle/hello_django/run/gunicorn.sock (17652)
+[2017-05-11 11:54:16 +0000] [17652] [INFO] Using worker: sync
+[2017-05-11 11:54:16 +0000] [17661] [INFO] Booting worker with pid: 17661
+[2017-05-11 11:54:16 +0000] [17662] [INFO] Booting worker with pid: 17662
+[2017-05-11 11:54:16 +0000] [17667] [INFO] Booting worker with pid: 17667
+[2017-05-11 11:54:16 +0000] [17670] [INFO] Booting worker with pid: 17670
+[2017-05-11 11:54:16 +0000] [17673] [INFO] Booting worker with pid: 17673
+[2017-05-11 11:54:16 +0000] [17676] [INFO] Booting worker with pid: 17676
+[2017-05-11 11:54:16 +0000] [17679] [INFO] Booting worker with pid: 17679
+[2017-05-11 11:54:16 +0000] [17682] [INFO] Booting worker with pid: 17682
+[2017-05-11 11:54:16 +0000] [17685] [INFO] Booting worker with pid: 17685
+[2017-05-11 11:54:16 +0000] [17652] [DEBUG] 9 workers
+[2017-05-11 18:54:44 +0000] [17676] [DEBUG] GET /
+[2017-05-11 18:56:08 +0000] [17676] [DEBUG] GET /
+[2017-05-11 18:56:09 +0000] [17667] [DEBUG] GET /
+[2017-05-11 11:58:03 +0000] [17652] [INFO] Handling signal: term
+[2017-05-11 18:58:03 +0000] [17667] [INFO] Worker exiting (pid: 17667)
+[2017-05-11 18:58:03 +0000] [17670] [INFO] Worker exiting (pid: 17670)
+[2017-05-11 18:58:03 +0000] [17676] [INFO] Worker exiting (pid: 17676)
+[2017-05-11 18:58:03 +0000] [17673] [INFO] Worker exiting (pid: 17673)
+[2017-05-11 18:58:03 +0000] [17679] [INFO] Worker exiting (pid: 17679)
+[2017-05-11 18:58:03 +0000] [17685] [INFO] Worker exiting (pid: 17685)
+[2017-05-11 18:58:03 +0000] [17662] [INFO] Worker exiting (pid: 17662)
+[2017-05-11 18:58:03 +0000] [17661] [INFO] Worker exiting (pid: 17661)
+[2017-05-11 18:58:03 +0000] [17682] [INFO] Worker exiting (pid: 17682)
+[2017-05-11 11:58:03 +0000] [17652] [INFO] Shutting down: Master
+Starting hello_app as hello
+[2017-05-11 11:58:15 +0000] [1419] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7ff0f8a45cf8>
+  errorlog: -
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 2
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7ff0f8a45a28>
+  pre_fork: <function pre_fork at 0x7ff0f8a45b90>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 999
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 9
+  proc_name: hello_app
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7ff0f8a458c0>
+  pre_exec: <function pre_exec at 0x7ff0f8a52320>
+  worker_tmp_dir: None
+  limit_request_fields: 100
+  pythonpath: None
+  on_exit: <function on_exit at 0x7ff0f8a52b18>
+  config: None
+  logconfig: None
+  check_config: False
+  statsd_prefix: 
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  reload_engine: auto
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7ff0f8a52488>
+  post_request: <function post_request at 0x7ff0f8a52578>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7ff0f8a52050>
+  raw_paste_global_conf: []
+  threads: 1
+  max_requests: 0
+  chdir: /webapps/Djingle/hello_django/hello
+  daemon: False
+  user: 999
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  on_starting: <function on_starting at 0x7ff0f8a45758>
+  post_worker_init: <function post_worker_init at 0x7ff0f8a45e60>
+  child_exit: <function child_exit at 0x7ff0f8a526e0>
+  worker_exit: <function worker_exit at 0x7ff0f8a52848>
+  paste: None
+  default_proc_name: hello.wsgi:application
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  ciphers: TLSv1
+  worker_abort: <function worker_abort at 0x7ff0f8a521b8>
+  loglevel: debug
+  bind: ['unix:/webapps/Djingle/hello_django/run/gunicorn.sock']
+  raw_env: []
+  initgroups: False
+  capture_output: False
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7ff0f8a529b0>
+  timeout: 30
+  keyfile: None
+  ca_certs: None
+  tmp_upload_dir: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2017-05-11 11:58:15 +0000] [1419] [INFO] Starting gunicorn 19.7.1
+[2017-05-11 11:58:15 +0000] [1419] [DEBUG] Arbiter booted
+[2017-05-11 11:58:15 +0000] [1419] [INFO] Listening at: unix:/webapps/Djingle/hello_django/run/gunicorn.sock (1419)
+[2017-05-11 11:58:15 +0000] [1419] [INFO] Using worker: sync
+[2017-05-11 11:58:15 +0000] [1575] [INFO] Booting worker with pid: 1575
+[2017-05-11 11:58:15 +0000] [1576] [INFO] Booting worker with pid: 1576
+[2017-05-11 11:58:15 +0000] [1577] [INFO] Booting worker with pid: 1577
+[2017-05-11 11:58:15 +0000] [1578] [INFO] Booting worker with pid: 1578
+[2017-05-11 11:58:15 +0000] [1587] [INFO] Booting worker with pid: 1587
+[2017-05-11 11:58:15 +0000] [1604] [INFO] Booting worker with pid: 1604
+[2017-05-11 11:58:15 +0000] [1624] [INFO] Booting worker with pid: 1624
+[2017-05-11 11:58:15 +0000] [1630] [INFO] Booting worker with pid: 1630
+[2017-05-11 11:58:15 +0000] [1631] [INFO] Booting worker with pid: 1631
+[2017-05-11 11:58:15 +0000] [1419] [DEBUG] 9 workers
+[2017-05-11 18:58:21 +0000] [1624] [DEBUG] GET /
+[2017-05-11 18:58:21 +0000] [1624] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+[2017-05-11 18:58:21 +0000] [1624] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+[2017-05-11 18:58:27 +0000] [1575] [DEBUG] GET /
+[2017-05-11 18:58:38 +0000] [1587] [DEBUG] GET /
+[2017-05-11 18:59:01 +0000] [1575] [DEBUG] GET /
+[2017-05-11 18:59:02 +0000] [1576] [DEBUG] GET /
+[2017-05-11 11:59:22 +0000] [1419] [INFO] Handling signal: term
+[2017-05-11 18:59:22 +0000] [1575] [INFO] Worker exiting (pid: 1575)
+[2017-05-11 18:59:22 +0000] [1576] [INFO] Worker exiting (pid: 1576)
+[2017-05-11 18:59:22 +0000] [1604] [INFO] Worker exiting (pid: 1604)
+[2017-05-11 18:59:22 +0000] [1631] [INFO] Worker exiting (pid: 1631)
+[2017-05-11 18:59:22 +0000] [1630] [INFO] Worker exiting (pid: 1630)
+[2017-05-11 18:59:22 +0000] [1578] [INFO] Worker exiting (pid: 1578)
+[2017-05-11 18:59:22 +0000] [1624] [INFO] Worker exiting (pid: 1624)
+[2017-05-11 18:59:22 +0000] [1587] [INFO] Worker exiting (pid: 1587)
+[2017-05-11 18:59:22 +0000] [1577] [INFO] Worker exiting (pid: 1577)
+[2017-05-11 11:59:22 +0000] [1419] [INFO] Shutting down: Master
+Starting hello_app as hello
+[2017-05-11 11:59:48 +0000] [1434] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f1daaa24cf8>
+  errorlog: -
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 2
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f1daaa24a28>
+  pre_fork: <function pre_fork at 0x7f1daaa24b90>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 999
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 9
+  proc_name: hello_app
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f1daaa248c0>
+  pre_exec: <function pre_exec at 0x7f1daaa31320>
+  worker_tmp_dir: None
+  limit_request_fields: 100
+  pythonpath: None
+  on_exit: <function on_exit at 0x7f1daaa31b18>
+  config: None
+  logconfig: None
+  check_config: False
+  statsd_prefix: 
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  reload_engine: auto
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f1daaa31488>
+  post_request: <function post_request at 0x7f1daaa31578>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f1daaa31050>
+  raw_paste_global_conf: []
+  threads: 1
+  max_requests: 0
+  chdir: /webapps/Djingle/hello_django/hello
+  daemon: False
+  user: 999
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  on_starting: <function on_starting at 0x7f1daaa24758>
+  post_worker_init: <function post_worker_init at 0x7f1daaa24e60>
+  child_exit: <function child_exit at 0x7f1daaa316e0>
+  worker_exit: <function worker_exit at 0x7f1daaa31848>
+  paste: None
+  default_proc_name: hello.wsgi:application
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  ciphers: TLSv1
+  worker_abort: <function worker_abort at 0x7f1daaa311b8>
+  loglevel: debug
+  bind: ['unix:/webapps/Djingle/hello_django/run/gunicorn.sock']
+  raw_env: []
+  initgroups: False
+  capture_output: False
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f1daaa319b0>
+  timeout: 30
+  keyfile: None
+  ca_certs: None
+  tmp_upload_dir: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2017-05-11 11:59:48 +0000] [1434] [INFO] Starting gunicorn 19.7.1
+[2017-05-11 11:59:48 +0000] [1434] [DEBUG] Arbiter booted
+[2017-05-11 11:59:48 +0000] [1434] [INFO] Listening at: unix:/webapps/Djingle/hello_django/run/gunicorn.sock (1434)
+[2017-05-11 11:59:48 +0000] [1434] [INFO] Using worker: sync
+[2017-05-11 11:59:48 +0000] [1579] [INFO] Booting worker with pid: 1579
+[2017-05-11 11:59:48 +0000] [1580] [INFO] Booting worker with pid: 1580
+[2017-05-11 11:59:48 +0000] [1581] [INFO] Booting worker with pid: 1581
+[2017-05-11 11:59:48 +0000] [1582] [INFO] Booting worker with pid: 1582
+[2017-05-11 11:59:48 +0000] [1583] [INFO] Booting worker with pid: 1583
+[2017-05-11 11:59:48 +0000] [1632] [INFO] Booting worker with pid: 1632
+[2017-05-11 11:59:48 +0000] [1633] [INFO] Booting worker with pid: 1633
+[2017-05-11 11:59:48 +0000] [1650] [INFO] Booting worker with pid: 1650
+[2017-05-11 11:59:48 +0000] [1676] [INFO] Booting worker with pid: 1676
+[2017-05-11 11:59:48 +0000] [1434] [DEBUG] 9 workers
+[2017-05-11 18:59:53 +0000] [1579] [DEBUG] GET /
+[2017-05-11 19:20:03 +0000] [1579] [DEBUG] GET /
+[2017-05-11 19:20:04 +0000] [1581] [DEBUG] GET /
+[2017-05-11 19:20:04 +0000] [1581] [DEBUG] GET /
+[2017-05-11 19:20:05 +0000] [1581] [DEBUG] GET /
+[2017-05-11 19:20:05 +0000] [1633] [DEBUG] GET /
+[2017-05-11 19:20:05 +0000] [1633] [DEBUG] GET /
+[2017-05-11 19:20:06 +0000] [1633] [DEBUG] GET /
+[2017-05-11 19:20:06 +0000] [1633] [DEBUG] GET /
+[2017-05-11 19:20:06 +0000] [1633] [DEBUG] GET /
+[2017-05-11 19:20:06 +0000] [1580] [DEBUG] GET /
+[2017-05-11 19:23:03 +0000] [1650] [DEBUG] GET /
+[2017-05-11 19:24:30 +0000] [1650] [DEBUG] GET /
+[2017-05-11 19:29:32 +0000] [1579] [DEBUG] GET /
+[2017-05-11 19:29:33 +0000] [1579] [DEBUG] GET /
+[2017-05-11 19:29:33 +0000] [1580] [DEBUG] GET /
+[2017-05-11 19:29:33 +0000] [1579] [DEBUG] GET /
+[2017-05-11 19:29:34 +0000] [1579] [DEBUG] GET /
+[2017-05-11 19:29:34 +0000] [1579] [DEBUG] GET /
+[2017-05-11 20:15:13 +0000] [1581] [DEBUG] GET /
+[2017-05-11 20:16:38 +0000] [1581] [DEBUG] GET /
+[2017-05-11 20:16:38 +0000] [1581] [DEBUG] GET /
+[2017-05-11 20:16:39 +0000] [1583] [DEBUG] GET /
+[2017-05-11 20:16:39 +0000] [1583] [DEBUG] GET /
+[2017-05-11 20:16:39 +0000] [1583] [DEBUG] GET /
+[2017-05-11 20:16:39 +0000] [1583] [DEBUG] GET /
+[2017-05-11 20:16:42 +0000] [1580] [DEBUG] GET /
+[2017-05-11 20:16:44 +0000] [1633] [DEBUG] GET /
+[2017-05-11 20:16:45 +0000] [1580] [DEBUG] GET /
+[2017-05-11 20:16:46 +0000] [1580] [DEBUG] GET /
+[2017-05-11 20:16:47 +0000] [1581] [DEBUG] GET /
+[2017-05-11 20:53:38 +0000] [1632] [DEBUG] GET /
